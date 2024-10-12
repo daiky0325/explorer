@@ -1,5 +1,7 @@
 #!/bin/bash
 docker-compose down
+docker volume rm  explorer_pgdata
+docker volume rm  explorer_walletstore
 
 rm -rf ./organizations
 mkdir organizations
